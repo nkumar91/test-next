@@ -1,4 +1,5 @@
 import Post from "@/components/Post/Post"
+import Link from "next/link"
 import { useRouter } from "next/router"
 
 export default function PostHome({star})
@@ -9,6 +10,7 @@ export default function PostHome({star})
         <>
         <Post title="hello"/>
             <h1>Post {star} Home {id}</h1>
+            <Link href="hello/6">go to comment</Link>
         </>
     )
 }
